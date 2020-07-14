@@ -1,0 +1,26 @@
+
+
+<div align = 'center'><h1 style="font-size: 35pt;"><u>Answer Review</u></h1></div>
+<div align = 'center'><h1>Name : <i>{{examinee}}</i></h1></div>
+<div align = 'center'><h1>Email-Id : <i>{{email_id}}</i></h1></div>
+<br>
+<div align = 'center'>
+    <table class="table-fill">
+        <tr>
+            <th >Question</th>
+            <th >Your Answer</th>
+            <th >Correct Answer</th>
+            <th >Marks Scored</th>
+        </tr>
+        <tr *ngFor = "let question of questions" style="align-content: center;">
+            <td>{{question.question}}</td>
+            <td>{{question.userInput}}</td>
+            <td style="text-transform: uppercase; ">{{question.correctAnswer}}</td>
+            <td>{{question.mark}}</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <h1>Total Score : {{total}}/{{questions.length}}</h1>
+    <h1 style="font-size: 40pt;">{{percentage}}%</h1>
+</div>

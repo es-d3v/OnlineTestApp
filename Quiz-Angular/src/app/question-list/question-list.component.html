@@ -1,0 +1,37 @@
+<!-- <div class="container" >
+    <div align = "center" style="padding-top: 100px;">
+        <div class="question-head">QUESTION {{question.id}} of {{questions.length}}</div>
+        <br><br>
+        <h1 style="padding-top: 20px;" class="quiz-question">{{question.question}}</h1>
+        <div class="answer">
+            <input class="answer-input" type="text" placeholder="Enter Answer"  [(ngModel)] = "question.userInput" >
+        </div>   
+    </div>
+</div> 
+<div class="container">
+    <button type = "submit" class= "submit" id = "nextButton" (click) = "nextQuestion()" >SAVE & NEXT</button>
+    <button type="submit" class="submit" style="display: none;" id= "submitTest" (click) = "submitTest()" routerLink = "/review">SUBMIT TEST</button>
+</div> -->
+
+<div class="container" style="background-color: #ddd;" >
+    <div align = "center">
+        <div class="question-head">QUESTION {{question.id}} of {{questions.length}}</div>
+        <div>
+            <hr>
+            <h1 style="padding-top: 5px; min-height: 80px;" class="quiz-question">{{question.question}}</h1>
+            <div class="answer">
+                <button id="option1" class="options" (click)="option1Select()">{{question.option1}}</button>
+                <button id="option2" class="options" (click)="option2Select()">{{question.option2}}</button>
+                <br>
+                <button id="option3" class="options" (click)="option3Select()">{{question.option3}}</button>
+                <button id="option4" class="options" (click)="option4Select()">{{question.option4}}</button>
+                <br>
+                <hr>
+            </div>   
+        </div>
+    </div>
+</div> 
+<div class="container" style="background-color: #ddd; padding-bottom: 40px;" >
+    <button type = "submit" class= "submit" id = "nextButton" (click) = "nextQuestion()" >SAVE & NEXT</button>
+    <button type="submit" class="submit" style="display: none;" id= "submitTest" (click) = "submitTest()" routerLink = "/review">SUBMIT TEST</button>
+</div>

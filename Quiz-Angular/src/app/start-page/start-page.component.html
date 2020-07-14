@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="question-head">
+    <h2 >SOLAR QUIZ</h2>
+    </div>
+</div>
+<div align = 'center'>
+    <input id = "name" class="answer-input" type="text" placeholder="Enter Name" [(ngModel)] = "examinee" required>
+    <br><br><br>
+    <input id="email" class="answer-input" type="email" placeholder="Enter email" [(ngModel)] = "email_id" required>
+    <br>
+    <button id="inputAns" type="submit" class="submit" (click) = "startTest()"  >Start Test</button>
+</div>
